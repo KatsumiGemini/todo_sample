@@ -1,12 +1,14 @@
 {% extends "layout.html" %}
+{% block page_title %}Tasks Info{% endblock %}
    {% block content %}
     <div id="layout-wrapper">
-      
+
             <div class="main-content">
                 <div class="page-content">
                     <div class="container-fluid">
 
                         <div class="row">
+
                             <div class="col-xl-12">
                                 <div class="card">
                                     <div class="card-body">
@@ -26,38 +28,56 @@
                                                 <div class="col-xl-9 col-md-12">
                                                     <div class="text-sm-end">
                                                         <button type="button" class="btn btn-success btn-rounded waves-effect waves-light mb-2 me-2" data-bs-toggle="modal" data-bs-target=".create-task"><i class="mdi mdi-plus me-1"></i> Create Task</button>
+            
                                                      </div>
+                                            
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="table-responsive">
                                             <table class="table table-nowrap align-middle mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <!-- <th style="width: 30px;">
+                                                            <div class="form-check font-size-16">
+                                                                <input type="checkbox" name="check" class="form-check-input" id="checkAll">
+                                                                <label class="form-check-label" for="checkAll"></label>
+                                                            </div>
+                                                        </th> -->
+                                                        <th>Priority</th>
+                                                        <th style="width: 190px;">Project</th>
+                                                        <th>Tasks</th>
+                                                        <th>Department</th>
+                                                        <th>Assigned To</th>
+                                                        <th>Project Manager</th>
+                                                        <th>Status</th>
+                                                        <th>Start Due</th>
+                                                        <th>Deadline</th>
+                                                        <th>Progress</th>
+                                                        <th>Manhours</th>
+                                                        <th>Notes</th>
+                                                        <th>Tasks</th>
+                                                    </tr>
+                                                </thead>
                                                 <tbody>
                                                     <tr>
                                                         <td style="width: 40px;">
-                                                            <div class="form-check font-size-16">
-                                                                <input class="form-check-input" type="checkbox" id="upcomingtaskCheck01">
-                                                                <label class="form-check-label" for="upcomingtaskCheck01"></label>
-                                                            </div>
+                                                       <div class="d-flex justify-content-center">
+                                                                        <span class="rounded-circle" style="height: 12px; width: 12px; background-color: #8B1A1A; display: inline-block;" title="High Priority"></span>
+                                                                    </div>
+                                                                </td>
                                                         </td>
                                                         <td>
-                                                            <h5 class="text-truncate font-size-14 m-0"><a href="javascript: void(0);" class="text-dark">Create a webadmin Dashboard</a></h5>
+                                                            <h5 class="text-truncate font-size-14 m-0"><a href="javascript: void(0);" class="text-dark">Osint</a></h5>
                                                         </td>
                                                         <td>
-                                                            <p class="mb-0">
-                                                                <i class="mdi mdi-comment-outline align-middle font-size-16 me-1"></i> 7
-                                                            </p>
+                                                           <p class="mb-0">UI</p>
                                                         </td>
                                                         <td>
-                                                            <p class="mb-0">Product Design</p>
+                                                            <p class="mb-0">MDC</p>
                                                         </td>
                                                         
-                                                        <td>
-                                                            <div class="text-center">
-                                                                <span class="badge rounded-pill badge-soft-secondary font-size-11">Waiting</span>
-                                                            </div>
-                                                        </td>
                                                         <td>
                                                             <div class="avatar-group">
                                                                 <div class="avatar-group-item">
@@ -72,282 +92,123 @@
                                                                 </div>
                                                             </div>
                                                         </td>
-                                                    </tr>
-
-                                                    <tr>
                                                         <td>
-                                                            <div class="form-check font-size-16">
-                                                                <input class="form-check-input" type="checkbox" id="upcomingtaskCheck02" checked>
-                                                                <label class="form-check-label" for="upcomingtaskCheck02"></label>
-                                                            </div>
+                                                            <p class="mb-0">Lurs</p>
                                                         </td>
                                                         <td>
-                                                            <h5 class="text-truncate font-size-14 m-0"><a href="javascript: void(0);" class="text-dark">Create a New Landing</a></h5>
+                                                            <div class="badge badge-soft-warning font-size-12">Ongoing</div>
                                                         </td>
                                                         <td>
-                                                            <p class="mb-0">
-                                                                <i class="mdi mdi-comment-outline align-middle font-size-16 me-1"></i> 8
-                                                            </p>
+                                                            <p class="mb-0">11 / 12 / 2024 :23:00</p>
                                                         </td>
-                                                        <td>
-                                                            <p class="mb-0">Development</p>
+                                                            <td>
+                                                            <p class="mb-0">02 / 15 / 2025 :11:23</p>
+                                                        </td>
+                                                            <td>
+                                                            <p class="mb-0">80%</p>
                                                         </td>
                                                         
-                                                        <td>
-                                                            <div class="text-center">
-                                                                <span class="badge rounded-pill badge-soft-primary font-size-11">Approved</span>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="avatar-group">
-                                                                <div class="avatar-group-item">
-                                                                    <a href="javascript: void(0);" class="d-inline-block">
-                                                                        <img src="assets/images/users/avatar-1.jpg" alt="" class="rounded-circle avatar-sm">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="avatar-group-item">
-                                                                    <a href="javascript: void(0);" class="d-inline-block">
-                                                                        <img src="assets/images/users/avatar-2.jpg" alt="" class="rounded-circle avatar-sm">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="avatar-group-item">
-                                                                    <a href="javascript: void(0);" class="d-inline-block">
-                                                                        <div class="avatar-sm">
-                                                                            <span class="avatar-title rounded-circle bg-success text-white font-size-16">
-                                                                                A
-                                                                            </span>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-    
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check font-size-16">
-                                                                <input class="form-check-input" type="checkbox" id="upcomingtaskCheck03">
-                                                                <label class="form-check-label" for="upcomingtaskCheck03"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <h5 class="text-truncate font-size-14 m-0"><a href="javascript: void(0);" class="text-dark">Create a webadmin Logo</a></h5>
-                                                        </td>
-                                                        <td>
-                                                            <p class="mb-0">
-                                                                <i class="mdi mdi-comment-outline align-middle font-size-16 me-1"></i> 5
-                                                            </p>
-                                                        </td>
-                                                        <td>
-                                                            <p class="mb-0">Illustration</p>
+                                                            <td>
+                                                            <p class="mb-0">500 hrs</p>
                                                         </td>
                                                         
-                                                        <td>
-                                                            <div class="text-center">
-                                                                <span class="badge rounded-pill badge-soft-secondary font-size-11">Waiting</span>
-                                                            </div>
+                                                            <td>
+                                                            <p class="mb-0">Lorem ipsum 
+                                                                - it may work</p>
                                                         </td>
-                                                        <td>
-                                                            <div class="avatar-group">
-                                                                <div class="avatar-group-item">
-                                                                    <a href="javascript: void(0);" class="d-inline-block">
-                                                                        <img src="assets/images/users/avatar-3.jpg" alt="" class="rounded-circle avatar-sm">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="avatar-group-item">
-                                                                    <a href="javascript: void(0);" class="d-inline-block">
-                                                                        <div class="avatar-sm">
-                                                                            <span class="avatar-title rounded-circle bg-warning text-white font-size-16">
-                                                                                R
-                                                                            </span>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                                <div class="avatar-group-item">
-                                                                    <a href="javascript: void(0);" class="d-inline-block">
-                                                                        <img src="assets/images/users/avatar-5.jpg" alt="" class="rounded-circle avatar-sm">
-                                                                    </a>
-                                                                </div>
-                                                            </div>
+                                                        
+                                                            <td>
+                                                            <p class="mb-0">4/12</p>
                                                         </td>
                                                         
                                                     </tr>
 
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check font-size-16">
-                                                                <input class="form-check-input" type="checkbox" id="upcomingtaskCheck04">
-                                                                <label class="form-check-label" for="upcomingtaskCheck04"></label>
-                                                            </div>
+                                                 <tr>
+                                                        <td style="width: 40px;">
+                                                       <div class="d-flex justify-content-center">
+                                                                        <span class="rounded-circle" style="height: 12px; width: 12px; background-color: #8B1A1A; display: inline-block;" title="High Priority"></span>
+                                                                    </div>
+                                                                </td>
                                                         </td>
                                                         <td>
-                                                            <h5 class="text-truncate font-size-14 m-0"><a href="javascript: void(0);" class="text-dark">Redesign - Landing page</a></h5>
+                                                            <h5 class="text-truncate font-size-14 m-0"><a href="javascript: void(0);" class="text-dark">Osint</a></h5>
                                                         </td>
                                                         <td>
-                                                            <p class="mb-0">
-                                                                <i class="mdi mdi-comment-outline align-middle font-size-16 me-1"></i> 7
-                                                            </p>
+                                                           <p class="mb-0">UI</p>
                                                         </td>
                                                         <td>
-                                                            <p class="mb-0">Design</p>
+                                                            <p class="mb-0">MDC</p>
                                                         </td>
                                                         
-                                                        <td>
-                                                            <div class="text-center">
-                                                                <span class="badge rounded-pill badge-soft-success font-size-11">Completed</span>
-                                                            </div>
-                                                        </td>
                                                         <td>
                                                             <div class="avatar-group">
-                                                                <div class="avatar-group-item">
-                                                                    <a href="javascript: void(0);" class="d-inline-block">
-                                                                        <img src="assets/images/users/avatar-1.jpg" alt="" class="rounded-circle avatar-sm">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="avatar-group-item">
-                                                                    <a href="javascript: void(0);" class="d-inline-block">
-                                                                        <img src="assets/images/users/avatar-6.jpg" alt="" class="rounded-circle avatar-sm">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="avatar-group-item">
-                                                                    <a href="javascript: void(0);" class="d-inline-block">
-                                                                        <div class="avatar-sm">
-                                                                            <span class="avatar-title rounded-circle bg-primary text-white font-size-16">
-                                                                                V
-                                                                            </span>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check font-size-16">
-                                                                <input class="form-check-input" type="checkbox" id="upcomingtaskCheck05">
-                                                                <label class="form-check-label" for="upcomingtaskCheck05"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <h5 class="text-truncate font-size-14 m-0"><a href="javascript: void(0);" class="text-dark">Create a Blog Template</a></h5>
-                                                        </td>
-                                                        <td>
-                                                            <p class="mb-0">
-                                                                <i class="mdi mdi-comment-outline align-middle font-size-16 me-1"></i> 5
-                                                            </p>
-                                                        </td>
-                                                        <td>
-                                                            <p class="mb-0">Angular</p>
-                                                        </td>
-                                                        
-                                                        <td>
-                                                            <div class="text-center">
-                                                                <span class="badge rounded-pill badge-soft-secondary font-size-11">Waiting</span>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="avatar-group">
-                                                                <div class="avatar-group-item">
-                                                                    <a href="javascript: void(0);" class="d-inline-block">
-                                                                        <img src="assets/images/users/avatar-7.jpg" alt="" class="rounded-circle avatar-sm">
-                                                                    </a>
-                                                                </div>
                                                                 <div class="avatar-group-item">
                                                                     <a href="javascript: void(0);" class="d-inline-block">
                                                                         <img src="assets/images/users/avatar-4.jpg" alt="" class="rounded-circle avatar-sm">
                                                                     </a>
                                                                 </div>
+                                                                <div class="avatar-group-item">
+                                                                    <a href="javascript: void(0);" class="d-inline-block">
+                                                                        <img src="assets/images/users/avatar-5.jpg" alt="" class="rounded-circle avatar-sm">
+                                                                    </a>
+                                                                </div>
                                                             </div>
                                                         </td>
+                                                        <td>
+                                                            <p class="mb-0">Lurs</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-warning font-size-12">Ongoing</div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0">11 / 12 / 2024 :23:00</p>
+                                                        </td>
+                                                            <td>
+                                                            <p class="mb-0">02 / 15 / 2025 :11:23</p>
+                                                        </td>
+                                                            <td>
+                                                            <p class="mb-0">80%</p>
+                                                        </td>
+                                                        
+                                                            <td>
+                                                            <p class="mb-0">500 hrs</p>
+                                                        </td>
+                                                        
+                                                            <td>
+                                                            <p class="mb-0">Lorem ipsum 
+                                                                - it may work</p>
+                                                        </td>
+                                                        
+                                                            <td>
+                                                            <p class="mb-0">4/12</p>
+                                                        </td>
+                                                        
+                                                        
                                                         
                                                     </tr>
 
                                                     <tr>
-                                                        <td>
-                                                            <div class="form-check font-size-16">
-                                                                <input class="form-check-input" type="checkbox" id="upcomingtaskCheck06">
-                                                                <label class="form-check-label" for="upcomingtaskCheck06"></label>
-                                                            </div>
+                                                        <td style="width: 40px;">
+                                                       <div class="d-flex justify-content-center">
+                                                                        <span class="rounded-circle" style="height: 12px; width: 12px; background-color: #8B1A1A; display: inline-block;" title="High Priority"></span>
+                                                                    </div>
+                                                                </td>
                                                         </td>
                                                         <td>
-                                                            <h5 class="text-truncate font-size-14 m-0"><a href="javascript: void(0);" class="text-dark">Minimal Multipurpose Landing</a></h5>
+                                                            <h5 class="text-truncate font-size-14 m-0"><a href="javascript: void(0);" class="text-dark">Osint</a></h5>
                                                         </td>
                                                         <td>
-                                                            <p class="mb-0">
-                                                                <i class="mdi mdi-comment-outline align-middle font-size-16 me-1"></i> 2
-                                                            </p>
+                                                           <p class="mb-0">UI</p>
                                                         </td>
                                                         <td>
-                                                            <p class="mb-0">Backend</p>
+                                                            <p class="mb-0">MDC</p>
                                                         </td>
                                                         
-                                                        <td>
-                                                            <div class="text-center">
-                                                                <span class="badge rounded-pill badge-soft-secondary font-size-11">Waiting</span>
-                                                            </div>
-                                                        </td>
                                                         <td>
                                                             <div class="avatar-group">
                                                                 <div class="avatar-group-item">
                                                                     <a href="javascript: void(0);" class="d-inline-block">
-                                                                        <img src="assets/images/users/avatar-1.jpg" alt="" class="rounded-circle avatar-sm">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="avatar-group-item">
-                                                                    <a href="javascript: void(0);" class="d-inline-block">
-                                                                        <img src="assets/images/users/avatar-2.jpg" alt="" class="rounded-circle avatar-sm">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="avatar-group-item">
-                                                                    <a href="javascript: void(0);" class="d-inline-block">
-                                                                        <img src="assets/images/users/avatar-3.jpg" alt="" class="rounded-circle avatar-sm">
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check font-size-16">
-                                                                <input class="form-check-input" type="checkbox" id="upcomingtaskCheck07">
-                                                                <label class="form-check-label" for="upcomingtaskCheck07"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <h5 class="text-truncate font-size-14 m-0"><a href="javascript: void(0);" class="text-dark">Fix Responsivenes for structure</a></h5>
-                                                        </td>
-                                                        <td>
-                                                            <p class="mb-0">
-                                                                <i class="mdi mdi-comment-outline align-middle font-size-16 me-1"></i> 5
-                                                            </p>
-                                                        </td>
-                                                        <td>
-                                                            <p class="mb-0">Development</p>
-                                                        </td>
-                                                        
-                                                        <td>
-                                                            <div class="text-center">
-                                                                <span class="badge rounded-pill badge-soft-success font-size-11">Completed</span>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="avatar-group">
-                                                                <div class="avatar-group-item">
-                                                                    <a href="javascript: void(0);" class="d-inline-block">
-                                                                        <img src="assets/images/users/avatar-2.jpg" alt="" class="rounded-circle avatar-sm">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="avatar-group-item">
-                                                                    <a href="javascript: void(0);" class="d-inline-block">
-                                                                        <div class="avatar-sm">
-                                                                            <span class="avatar-title rounded-circle bg-danger text-white font-size-16">
-                                                                                S
-                                                                            </span>
-                                                                        </div>
+                                                                        <img src="assets/images/users/avatar-4.jpg" alt="" class="rounded-circle avatar-sm">
                                                                     </a>
                                                                 </div>
                                                                 <div class="avatar-group-item">
@@ -357,125 +218,58 @@
                                                                 </div>
                                                             </div>
                                                         </td>
+                                                        <td>
+                                                            <p class="mb-0">Lurs</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-warning font-size-12">Ongoing</div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0">11 / 12 / 2024 :23:00</p>
+                                                        </td>
+                                                            <td>
+                                                            <p class="mb-0">02 / 15 / 2025 :11:23</p>
+                                                        </td>
+                                                            <td>
+                                                            <p class="mb-0">80%</p>
+                                                        </td>
                                                         
+                                                            <td>
+                                                            <p class="mb-0">500 hrs</p>
+                                                        </td>
+                                                        
+                                                            <td>
+                                                            <p class="mb-0">Lorem ipsum 
+                                                                - it may work</p>
+                                                        </td>
+                                                        
+                                                            <td>
+                                                            <p class="mb-0">4/12</p>
+                                                        </td>
+                                               
                                                     </tr>
-
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check font-size-16">
-                                                                <input class="form-check-input" type="checkbox" id="upcomingtaskCheck08" checked>
-                                                                <label class="form-check-label" for="upcomingtaskCheck08"></label>
-                                                            </div>
+<tr>
+                                                        <td style="width: 40px;">
+                                                       <div class="d-flex justify-content-center">
+                                                                        <span class="rounded-circle" style="height: 12px; width: 12px; background-color: #8B1A1A; display: inline-block;" title="High Priority"></span>
+                                                                    </div>
+                                                                </td>
                                                         </td>
                                                         <td>
-                                                            <h5 class="text-truncate font-size-14 m-0"><a href="javascript: void(0);" class="text-dark">Create a webadmin Dashboard</a></h5>
+                                                            <h5 class="text-truncate font-size-14 m-0"><a href="javascript: void(0);" class="text-dark">Osint</a></h5>
                                                         </td>
                                                         <td>
-                                                            <p class="mb-0">
-                                                                <i class="mdi mdi-comment-outline align-middle font-size-16 me-1"></i> 9
-                                                            </p>
+                                                           <p class="mb-0">UI</p>
                                                         </td>
                                                         <td>
-                                                            <p class="mb-0">Illustration</p>
+                                                            <p class="mb-0">MDC</p>
                                                         </td>
                                                         
-                                                        <td>
-                                                            <div class="text-center">
-                                                                <span class="badge rounded-pill badge-soft-primary font-size-11">Approved</span>
-                                                            </div>
-                                                        </td>
                                                         <td>
                                                             <div class="avatar-group">
                                                                 <div class="avatar-group-item">
                                                                     <a href="javascript: void(0);" class="d-inline-block">
-                                                                        <img src="assets/images/users/avatar-7.jpg" alt="" class="rounded-circle avatar-sm">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="avatar-group-item">
-                                                                    <a href="javascript: void(0);" class="d-inline-block">
-                                                                        <img src="assets/images/users/avatar-8.jpg" alt="" class="rounded-circle avatar-sm">
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check font-size-16">
-                                                                <input class="form-check-input" type="checkbox" id="upcomingtaskCheck09">
-                                                                <label class="form-check-label" for="upcomingtaskCheck09"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <h5 class="text-truncate font-size-14 m-0"><a href="javascript: void(0);" class="text-dark">New Widgets For Dashboard</a></h5>
-                                                        </td>
-                                                        <td>
-                                                            <p class="mb-0">
-                                                                <i class="mdi mdi-comment-outline align-middle font-size-16 me-1"></i> 10
-                                                            </p>
-                                                        </td>
-                                                        <td>
-                                                            <p class="mb-0">Design</p>
-                                                        </td>
-                                                        
-                                                        <td>
-                                                            <div class="text-center">
-                                                                <span class="badge rounded-pill badge-soft-secondary font-size-11">Waiting</span>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="avatar-group">
-                                                                <div class="avatar-group-item">
-                                                                    <a href="javascript: void(0);" class="d-inline-block">
-                                                                        <img src="assets/images/users/avatar-1.jpg" alt="" class="rounded-circle avatar-sm">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="avatar-group-item">
-                                                                    <a href="javascript: void(0);" class="d-inline-block">
-                                                                        <img src="assets/images/users/avatar-3.jpg" alt="" class="rounded-circle avatar-sm">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="avatar-group-item">
-                                                                    <a href="javascript: void(0);" class="d-inline-block">
-                                                                        <img src="assets/images/users/avatar-6.jpg" alt="" class="rounded-circle avatar-sm">
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td>
-                                                            <div class="form-check font-size-16">
-                                                                <input class="form-check-input" type="checkbox" id="upcomingtaskCheck10" checked>
-                                                                <label class="form-check-label" for="upcomingtaskCheck10"></label>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <h5 class="text-truncate font-size-14 m-0"><a href="javascript: void(0);" class="text-dark">Old Landing Re-Design</a></h5>
-                                                        </td>
-                                                        <td>
-                                                            <p class="mb-0">
-                                                                <i class="mdi mdi-comment-outline align-middle font-size-16 me-1"></i> 5
-                                                            </p>
-                                                        </td>
-                                                        <td>
-                                                            <p class="mb-0">Angular</p>
-                                                        </td>
-                                                        
-                                                        <td>
-                                                            <div class="text-center">
-                                                                <span class="badge rounded-pill badge-soft-primary font-size-11">Approved</span>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="avatar-group">
-                                                                <div class="avatar-group-item">
-                                                                    <a href="javascript: void(0);" class="d-inline-block">
-                                                                        <img src="assets/images/users/avatar-3.jpg" alt="" class="rounded-circle avatar-sm">
+                                                                        <img src="assets/images/users/avatar-4.jpg" alt="" class="rounded-circle avatar-sm">
                                                                     </a>
                                                                 </div>
                                                                 <div class="avatar-group-item">
@@ -483,71 +277,102 @@
                                                                         <img src="assets/images/users/avatar-5.jpg" alt="" class="rounded-circle avatar-sm">
                                                                     </a>
                                                                 </div>
-                                                                <div class="avatar-group-item">
-                                                                    <a href="javascript: void(0);" class="d-inline-block">
-                                                                        <div class="avatar-sm">
-                                                                            <span class="avatar-title rounded-circle bg-primary text-white font-size-16">
-                                                                                V
-                                                                            </span>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
                                                             </div>
                                                         </td>
+                                                        <td>
+                                                            <p class="mb-0">Lurs</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-warning font-size-12">Ongoing</div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0">11 / 12 / 2024 :23:00</p>
+                                                        </td>
+                                                            <td>
+                                                            <p class="mb-0">02 / 15 / 2025 :11:23</p>
+                                                        </td>
+                                                            <td>
+                                                            <p class="mb-0">80%</p>
+                                                        </td>
+                                                        
+                                                            <td>
+                                                            <p class="mb-0">500 hrs</p>
+                                                        </td>
+                                                        
+                                                            <td>
+                                                            <p class="mb-0">Lorem ipsum 
+                                                                - it may work</p>
+                                                        </td>
+                                                        
+                                                            <td>
+                                                            <p class="mb-0">4/12</p>
+                                                        </td>
+                                                        
+                                                        
                                                         
                                                     </tr>
-
                                                     <tr>
-                                                        <td>
-                                                            <div class="form-check font-size-16">
-                                                                <input class="form-check-input" type="checkbox" id="upcomingtaskCheck11">
-                                                                <label class="form-check-label" for="upcomingtaskCheck11"></label>
-                                                            </div>
+                                                        <td style="width: 40px;">
+                                                       <div class="d-flex justify-content-center">
+                                                                        <span class="rounded-circle" style="height: 12px; width: 12px; background-color: #8B1A1A; display: inline-block;" title="High Priority"></span>
+                                                                    </div>
+                                                                </td>
                                                         </td>
                                                         <td>
-                                                            <h5 class="text-truncate font-size-14 m-0"><a href="javascript: void(0);" class="text-dark">Create a Landing Page</a></h5>
+                                                            <h5 class="text-truncate font-size-14 m-0"><a href="javascript: void(0);" class="text-dark">Osint</a></h5>
                                                         </td>
                                                         <td>
-                                                            <p class="mb-0">
-                                                                <i class="mdi mdi-comment-outline align-middle font-size-16 me-1"></i> 6
-                                                            </p>
+                                                           <p class="mb-0">UI</p>
                                                         </td>
                                                         <td>
-                                                            <p class="mb-0">Design</p>
+                                                            <p class="mb-0">MDC</p>
                                                         </td>
                                                         
-                                                        <td>
-                                                            <div class="text-center">
-                                                                <span class="badge rounded-pill badge-soft-success font-size-11">Completed</span>
-                                                            </div>
-                                                        </td>
                                                         <td>
                                                             <div class="avatar-group">
-                                                             
                                                                 <div class="avatar-group-item">
                                                                     <a href="javascript: void(0);" class="d-inline-block">
-                                                                        <div class="avatar-sm">
-                                                                            <span class="avatar-title rounded-circle bg-info text-white font-size-16">
-                                                                                R
-                                                                            </span>
-                                                                        </div>
+                                                                        <img src="assets/images/users/avatar-4.jpg" alt="" class="rounded-circle avatar-sm">
                                                                     </a>
                                                                 </div>
                                                                 <div class="avatar-group-item">
                                                                     <a href="javascript: void(0);" class="d-inline-block">
-                                                                        <img src="assets/images/users/avatar-7.jpg" alt="" class="rounded-circle avatar-sm">
-                                                                    </a>
-                                                                </div>
-                                                                <div class="avatar-group-item">
-                                                                    <a href="javascript: void(0);" class="d-inline-block">
-                                                                        <img src="assets/images/users/avatar-8.jpg" alt="" class="rounded-circle avatar-sm">
+                                                                        <img src="assets/images/users/avatar-5.jpg" alt="" class="rounded-circle avatar-sm">
                                                                     </a>
                                                                 </div>
                                                             </div>
                                                         </td>
+                                                        <td>
+                                                            <p class="mb-0">Lurs</p>
+                                                        </td>
+                                                        <td>
+                                                            <div class="badge badge-soft-warning font-size-12">Ongoing</div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-0">11 / 12 / 2024 :23:00</p>
+                                                        </td>
+                                                            <td>
+                                                            <p class="mb-0">02 / 15 / 2025 :11:23</p>
+                                                        </td>
+                                                            <td>
+                                                            <p class="mb-0">80%</p>
+                                                        </td>
                                                         
-                                                    </tr>
-
+                                                            <td>
+                                                            <p class="mb-0">500 hrs</p>
+                                                        </td>
+                                                        
+                                                            <td>
+                                                            <p class="mb-0">Lorem ipsum 
+                                                                - it may work</p>
+                                                        </td>
+                                                        
+                                                            <td>
+                                                            <p class="mb-0">4/12</p>
+                                                        </td>
+                                                        
+                                                        
+                                                        
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -575,37 +400,48 @@
                            <div class="row">
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label" for="CreateTask-Task-Name">Task Name</label>
-                                        <input type="text" class="form-control" placeholder="Enter Task Name" id="CreateTask-Task-Name">
-                                    </div>
-                                </div>
-                               <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label class="form-label" for="CreateTask-Team-Member">Team Member</label>
-                                        <input type="text" class="form-control" placeholder="Enter Team Member" id="CreateTask-Team-Member">
+                                        <label class="form-label" for="CreateTask-Category">Select Project</label>
+                                        <select class="form-select">
+                                            <option  selected> Select </option>
+                                            <option>Osint</option>
+                                            <option>MDC</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label">Due Date</label>
+                                        <label class="form-label" for="CreateTask-Task-Name">Task Name</label>
+                                        <input type="text" class="form-control" placeholder="Enter Task Name" id="CreateTask-Task-Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Start Date</label>
+                                        <input type="text" class="form-control" placeholder="Select Due Date" id="CreateTask-due-date">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                     <div class="mb-3">
+                                        <label class="form-label">Deadline</label>
                                         <input type="text" class="form-control" placeholder="Select Due Date" id="CreateTask-due-date">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label" for="CreateTask-Category">Category</label>
-                                        <select class="form-select">
-                                            <option  selected> Select Category </option>
-                                            <option>Waiting</option>
-                                            <option>Approved</option>
-                                            <option>Completed</option>
-                                        </select>
+                                        <label class="form-label">Client</label>
+                                        <input type="text" class="form-control" placeholder="Select Due Date" id="CreateTask-due-date">
                                     </div>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-md-6">
                                     <div class="mb-3">
-                                        <label class="form-label" for="CreateTask-Task Description">Task Description</label>
-                                        <textarea class="form-control" id="projectdesc" rows="3" placeholder="Enter Task Description..."></textarea>
+                                        <label class="form-label">Department</label>
+                                        <input type="text" class="form-control" placeholder="Select Due Date" id="CreateTask-due-date">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="CreateTask-Team-Member">Team Member</label>
+                                        <input type="text" class="form-control" placeholder="Enter Team Member" id="CreateTask-Team-Member">
                                     </div>
                                 </div>
                            </div>

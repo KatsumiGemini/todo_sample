@@ -125,7 +125,9 @@
 
                         <!-- start page title -->
                         <div class="page-title-box align-self-center d-none d-md-block">
-                            <h4 class="page-title mb-0">Hi, Welcome Back!</h4>
+                            <h4 class="page-title mb-0">
+                                {% block page_title %}Hi, Welcome Back!{% endblock %}
+                            </h4>
                         </div>
                         <!-- end page title -->
 
@@ -281,11 +283,6 @@
         <script src="{{ url_for('static', filename='assets/js/pages/dashboard.init.js') }}"></script>
         
         <script src="{{ url_for('static', filename='assets/js/app.js') }}"></script>
-        <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    new MetisMenu("#side-menu");
-  });
-</script>
     </body>
 
 </html>
